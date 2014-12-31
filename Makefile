@@ -111,7 +111,7 @@ coverage:
 .PHONY: run
 run:
 	@echo ">> ============= Run API Server ============= <<"
-	$(go) run mammal.go server -c config.test.yml
+	$(go) run mammal.go server -c config.dist.yml
 
 
 ## ci: Run all CI tests.

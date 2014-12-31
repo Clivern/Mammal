@@ -141,16 +141,15 @@ var serverCmd = &cobra.Command{
 		})
 
 		e.GET("/", func(c echo.Context) error {
-			return controller.Health(c)
+			return controller.Home(c)
 		})
 
-		// API Health
 		e.GET("/_health", func(c echo.Context) error {
 			return controller.Health(c)
 		})
 
 		e.GET("/_ready", func(c echo.Context) error {
-			return controller.Health(c)
+			return controller.Ready(c)
 		})
 
 		var runerr error

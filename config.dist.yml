@@ -3,7 +3,7 @@ app:
     # App name
     name: ${MAMMAL_APP_NAME:-mammal}
     # Env mode (dev or prod)
-    mode: ${MAMMAL_APP_MODE:-dev}
+    mode: ${MAMMAL_APP_MODE:-prod}
     # HTTP port
     port: ${MAMMAL_API_PORT:-8000}
     # Hostname
