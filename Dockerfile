@@ -7,7 +7,7 @@ WORKDIR /app
 
 COPY ./ ./
 
-RUN go build -v -ldflags="-X 'main.version=v1.2.0'" mammal.go
+RUN go build -v -ldflags="-X 'main.version=v1.3.0'" mammal.go
 
 FROM ubuntu:22.04
 

@@ -13,6 +13,6 @@ import (
 // Home controller
 func Home(c echo.Context) error {
 	return c.JSON(http.StatusOK, map[string]interface{}{
-		"version": "1.2.0",
+		"version": "1.3.0",
 	})
 }
