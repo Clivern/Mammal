@@ -30,12 +30,12 @@
 
 #### Linux Deployment
 
-Download [the latest mammal binary](https://github.com/clivern/Mammal/releases). Make it executable from everywhere.
+Download [the latest mammal binary](https://github.com/clivern/mammal/releases). Make it executable from everywhere.
 
 ```zsh
-$ export LATEST_VERSION=$(curl --silent "https://api.github.com/repos/clivern/Mammal/releases/latest" | jq '.tag_name' | sed -E 's/.*"([^"]+)".*/\1/' | tr -d v)
+$ export LATEST_VERSION=$(curl --silent "https://api.github.com/repos/clivern/mammal/releases/latest" | jq '.tag_name' | sed -E 's/.*"([^"]+)".*/\1/' | tr -d v)
 
-$ curl -sL https://github.com/clivern/Mammal/releases/download/v{$LATEST_VERSION}/mammal_{$LATEST_VERSION}_Linux_x86_64.tar.gz | tar xz
+$ curl -sL https://github.com/clivern/mammal/releases/download/v{$LATEST_VERSION}/mammal_{$LATEST_VERSION}_Linux_x86_64.tar.gz | tar xz
 ```
 
 Create the configs file `config.yml` from `config.dist.yml`. Something like the following:
