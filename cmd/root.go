@@ -15,7 +15,7 @@ var config string
 
 var rootCmd = &cobra.Command{
 	Use: "mammal",
-	Short: `🐺 A Sample Microservice
+	Short: `🐺 A Sample Microservice.
 
 If you have any suggestions, bug reports, or annoyances please report
 them to our issue tracker at <https://github.com/clivern/mammal/issues>`,
