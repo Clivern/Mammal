@@ -79,7 +79,7 @@ $ mammal server -c /path/to/config.yml
 
 #### Docker Deployment
 
-To build and push the image to docker hub registry.
+To build and push the image to [docker hub registry](https://hub.docker.com/r/clivern/mammal).
 
 ```zsh
 $ docker build -t clivern/mammal:v1.0.0 .
