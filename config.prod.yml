@@ -1,0 +1,27 @@
+# App configs
+app:
+    # App name
+    name: ${MAMMAL_APP_NAME:-mammal}
+    # Env mode (dev or prod)
+    mode: ${MAMMAL_APP_MODE:-prod}
+    # HTTP port
+    port: ${MAMMAL_API_PORT:-80}
+    # Hostname
+    hostname: ${MAMMAL_API_HOSTNAME:-127.0.0.1}
+    # TLS configs
+    tls:
+        status: ${MAMMAL_API_TLS_STATUS:-off}
+        crt_path: ${MAMMAL_API_TLS_PEMPATH:-cert/server.crt}
+        key_path: ${MAMMAL_API_TLS_KEYPATH:-cert/server.key}
+
+    # Global timeout
+    timeout: ${MAMMAL_API_TIMEOUT:-50}
+
+    # Log configs
+    log:
+        # Log level, it can be debug, info, warn, error, panic, fatal
+        level: ${MAMMAL_LOG_LEVEL:-info}
+        # Output can be stdout or abs path to log file /var/logs/mammal.log
+        output: ${MAMMAL_LOG_OUTPUT:-/var/logs/mammal.log}
+        # Format can be json
+        format: ${MAMMAL_LOG_FORMAT:-json}
