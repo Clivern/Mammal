@@ -77,6 +77,23 @@ $ mammal server -c /path/to/config.yml
 ```
 
 
+#### Docker Deployment
+
+To build and push the image to docker hub registry.
+
+```zsh
+$ docker build -t clivern/mammal:v1.0.0 .
+$ docker push clivern/mammal:v1.0.0
+```
+
+To pull and run the microservice.
+
+```zsh
+$ docker pull clivern/mammal:v1.0.0
+$ docker run -d -p 8000:8000 clivern/mammal:v1.0.0
+```
+
+
 ## Versioning
 
 For transparency into our release cycle and in striving to maintain backward compatibility, Mammal is maintained under the [Semantic Versioning guidelines](https://semver.org/) and release process is predictable and business-friendly.
