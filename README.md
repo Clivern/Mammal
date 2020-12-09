@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="/static/logo.png?v=1.0.1" width="200" />
+    <img src="/static/logo.png?v=1.1.0" width="200" />
     <h3 align="center">Mammal</h3>
     <p align="center">A Sample Microservice.</p>
     <p align="center">
@@ -10,10 +10,10 @@
             <img src="https://github.com/clivern/mammal/workflows/Release/badge.svg">
         </a>
         <a href="https://github.com/clivern/mammal/releases">
-            <img src="https://img.shields.io/badge/Version-1.0.1-9B59B6.svg">
+            <img src="https://img.shields.io/badge/Version-1.1.0-9B59B6.svg">
         </a>
         <a href="https://goreportcard.com/report/github.com/clivern/mammal">
-            <img src="https://goreportcard.com/badge/github.com/clivern/mammal?v=1.0.1">
+            <img src="https://goreportcard.com/badge/github.com/clivern/mammal?v=1.1.0">
         </a>
         <a href="https://godoc.org/github.com/clivern/mammal">
             <img src="https://godoc.org/github.com/clivern/mammal?status.svg">
@@ -82,15 +82,15 @@ $ mammal server -c /path/to/config.yml
 To build and push the image to [docker hub registry](https://hub.docker.com/r/clivern/mammal).
 
 ```zsh
-$ docker build -t clivern/mammal:v1.0.1 .
-$ docker push clivern/mammal:v1.0.1
+$ docker build -t clivern/mammal:v1.1.0 .
+$ docker push clivern/mammal:v1.1.0
 ```
 
 To pull and run the microservice.
 
 ```zsh
-$ docker pull clivern/mammal:v1.0.1
-$ docker run -d -p 8000:8000 clivern/mammal:v1.0.1
+$ docker pull clivern/mammal:v1.1.0
+$ docker run -d -p 8000:8000 clivern/mammal:v1.1.0
 ```
 
 

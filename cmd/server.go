@@ -149,6 +149,10 @@ var serverCmd = &cobra.Command{
 			return controller.Health(c)
 		})
 
+		e.GET("/_ready", func(c echo.Context) error {
+			return controller.Health(c)
+		})
+
 		var runerr error
 
 		if viper.GetBool("app.tls.status") {
