@@ -94,6 +94,15 @@ $ docker run -d -p 8000:8000 clivern/mammal:v1.3.0
 ```
 
 
+#### Kubernetes Deployment
+
+To install using helm, run the following command
+
+```zsh
+$ helm install my-release -f ./chart/values.yaml ./chart --timeout 3600s  --namespace default
+```
+
+
 ## Versioning
 
 For transparency into our release cycle and in striving to maintain backward compatibility, Mammal is maintained under the [Semantic Versioning guidelines](https://semver.org/) and release process is predictable and business-friendly.
