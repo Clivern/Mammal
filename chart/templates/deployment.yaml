@@ -1,0 +1,37 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "mammal.name" . }}-deployment
+spec:
+  replicas: {{ .Values.replicas }}
+  selector:
+    matchLabels:
+      {{- include "mammal.selectorLabels" . | nindent 6 }}
+  template:
+    metadata:
+      labels:
+        {{- include "mammal.labels" . | nindent 8 }}
+      name: {{ include "mammal.name" . }}
+    spec:
+      containers:
+        -
+          image: {{ include "mammal.image" . }}
+          name: {{ include "mammal.name" . }}-app
+          env:
+          - name: MAMMAL_APP_MODE
+            value: {{ .Values.configs.mode }}
+          ports:
+          - containerPort: 8000
+          readinessProbe:
+            httpGet:
+              path: /_ready
+              port: 8000
+            initialDelaySeconds: 5
+            periodSeconds: 10
+          livenessProbe:
+            httpGet:
+              path: /_health
+              port: 8000
+            initialDelaySeconds: 10
+            periodSeconds: 5

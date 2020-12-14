@@ -1,6 +1,6 @@
 module github.com/clivern/mammal
 
-go 1.19
+go 1.17
 
 require (
 	github.com/drone/envsubst v1.0.3

@@ -1,7 +1,7 @@
 go           ?= go
 gofmt        ?= $(go)fmt
 pkgs          = ./...
-poodle       ?= poodle
+helm         ?= helm
 
 
 help: Makefile
@@ -112,6 +112,12 @@ coverage:
 run:
 	@echo ">> ============= Run API Server ============= <<"
 	$(go) run mammal.go server -c config.dist.yml
+
+
+## debug_chart: Debug Helm chart
+.PHONY: debug_chart
+debug_chart:
+	$(helm) template chart
 
 
 ## ci: Run all CI tests.
