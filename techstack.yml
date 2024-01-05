@@ -2,7 +2,7 @@ repo_name: Clivern/Mammal
 report_id: 612088c57b48c8f6e95bf7a2913c1e50
 version: 0.1
 repo_type: Public
-timestamp: '2023-12-21T15:24:03+00:00'
+timestamp: '2024-01-05T08:18:47+00:00'
 requested_by: dependabot[bot]
 provider: github
 branch: main
@@ -18,6 +18,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/1005/O6AczwfV_400x400.png
+  detection_source_url: https://github.com/Clivern/Mammal
   detection_source: Repo Metadata
 - name: Smarty
   description: Template engine for PHP
@@ -27,6 +28,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Templating Languages & Extensions
   image_url: https://img.stackshare.io/service/3693/smarty.png
+  detection_source_url: https://github.com/Clivern/Mammal
   detection_source: Repo Metadata
 - name: Echo
   description: High performance, extensible, minimalist Go web framework
@@ -37,6 +39,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Microframeworks (Backend)
   image_url: https://img.stackshare.io/service/4996/9P0MlumU_400x400.jpg
+  detection_source_url: https://github.com/Clivern/Mammal/blob/main/go.mod
   detection_source: go.mod
   last_updated_by: Clivern
   last_updated_on: 2020-12-08 20:57:27.000000000 Z
@@ -48,6 +51,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Serialization Frameworks
   image_url: https://img.stackshare.io/service/4393/ma2jqJKH_400x400.png
+  detection_source_url: https://github.com/Clivern/Mammal/blob/main/go.mod
   detection_source: go.mod
   last_updated_by: renovate[bot]
   last_updated_on: 2023-05-31 00:11:41.000000000 Z
@@ -60,6 +64,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Virtual Machine Platforms & Containers
   image_url: https://img.stackshare.io/service/586/n4u37v9t_400x400.png
+  detection_source_url: https://github.com/Clivern/Mammal
   detection_source: Repo Metadata
 - name: Git
   description: Fast, scalable, distributed revision control system
@@ -69,6 +74,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Version Control System
   image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/Clivern/Mammal
   detection_source: Repo Metadata
 - name: GitHub Actions
   description: Automate your workflow from idea to production
@@ -78,6 +84,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Continuous Integration
   image_url: https://img.stackshare.io/service/11563/actions.png
+  detection_source_url: https://github.com/Clivern/Mammal/blob/main/.github/workflows/build.yml
   detection_source: ".github/workflows/build.yml"
   last_updated_by: renovate[bot]
   last_updated_on: 2023-09-04 21:14:18.000000000 Z
@@ -91,6 +98,7 @@ tools:
   category: Monitoring
   sub_category: Monitoring Tools
   image_url: https://img.stackshare.io/service/2501/default_3cf1b307194b26782be5cb209d30360580ae5b3c.png
+  detection_source_url: https://github.com/Clivern/Mammal/blob/main/go.mod
   detection_source: go.mod
   last_updated_by: dependabot[bot]
   last_updated_on: 2023-05-24 18:56:46.000000000 Z
@@ -103,6 +111,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/4631/default_c2062d40130562bdc836c13dbca02d318205a962.png
+  detection_source_url: https://github.com/Clivern/Mammal
   detection_source: Repo Metadata
 - name: afero
   description: A FileSystem Abstraction System for Go
@@ -498,6 +507,7 @@ tools:
   category: Libraries
   sub_category: Go Modules Packages
   image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/Clivern/Mammal/blob/main/go.mod
   detection_source: go.mod
   last_updated_by: renovate[bot]
   last_updated_on: 2023-05-31 00:11:41.000000000 Z
